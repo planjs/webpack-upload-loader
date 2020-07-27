@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+
+/node_modules/
+/lib/
+/coverage/
+npm-debug.*.log
