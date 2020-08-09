@@ -1,1 +1,31 @@
-{}
+{
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "This is description of option."
+    },
+    "exclude": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "include": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "esModule": {
+      "description": "Default generates JS modules that use the ES modules syntax.",
+      "type": "boolean"
+    },
+    "upload": {
+      "description": "Custom upload function returns upload address",
+      "instanceof": "Function"
+    }
+  },
+  "required": ["upload"]
+}

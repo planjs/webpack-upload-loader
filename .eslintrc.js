@@ -3,9 +3,12 @@ module.exports = {
   extends: [
     'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
-    '@webpack-contrib/eslint-config-webpack',
     'prettier',
   ],
+  parserOptions: {
+    ecmaVersion: 9,
+    sourceType: 'module',
+  },
   env: {
     browser: false,
     node: true,
