@@ -2,7 +2,7 @@
   "name": "@planjs/webpack-upload-loader",
   "version": "0.0.1",
   "description": "Upload files to oss after webpack is packaged",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "start": "tsc -w",
     "prepare": "tsc",
