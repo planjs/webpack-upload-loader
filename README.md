@@ -1,13 +1,13 @@
-# webpack-upload-loader
+# @planjs/webpack-upload-loader
 
-The `webpack-upload-loader` resolves `import`/`require()` on a file into a remote address
+The `@planjs/webpack-upload-loader` resolves `import`/`require()` on a file into a remote address
 
 ## Getting Started
 
-To begin, you'll need to install `webpack-upload-loader`:
+To begin, you'll need to install `@planjs/webpack-upload-loader`:
 
 ```console
-$ npm install webpack-upload-loader --save-dev
+$ npm install @planjs/webpack-upload-loader --save-dev
 ```
 
 Import (or `require`) the target file(s) in one of the bundle's files:
@@ -30,7 +30,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'webpack-upload-loader',
+            loader: '@planjs/webpack-upload-loader',
           },
         ],
       },
@@ -48,7 +48,7 @@ module.exports = {
 Type: `Boolean`
 Default: `true`
 
-By default, `webpack-upload-loader` generates JS modules that use the ES modules syntax.
+By default, `@planjs/webpack-upload-loader` generates JS modules that use the ES modules syntax.
 There are some cases in which using ES modules is beneficial, like in the case of [module concatenation](https://webpack.js.org/plugins/module-concatenation-plugin/) and [tree shaking](https://webpack.js.org/guides/tree-shaking/).
 
 You can enable a CommonJS module syntax using:
@@ -63,7 +63,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: '@planjs/webpack-upload-loader',
             options: {
               esModule: true,
             },
