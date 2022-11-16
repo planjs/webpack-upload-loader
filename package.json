@@ -35,7 +35,7 @@
     "@types/loader-utils": "^2.0.1",
     "@types/schema-utils": "^2.4.0",
     "globby": "^11.0.1",
-    "loader-utils": "^2.0.0",
+    "loader-utils": "^2.0.4",
     "memfs": "^3.2.0",
     "mime-types": "^2.1.27",
     "ora": "^4.0.5",
